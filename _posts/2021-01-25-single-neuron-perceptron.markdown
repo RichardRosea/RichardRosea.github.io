@@ -2,22 +2,22 @@
 layout: post
 read_time: true
 show_date: true
-title:  Single Neuron Perceptron
-date:   2021-01-25 13:32:20 -0600
-description: Single neuron perceptron that classifies elements learning quite quickly.
+title:  Welcome
+date:   2022-10-25 13:32:20 -0600
+description: Working on this
 img: posts/20210125/Perceptron.jpg 
-tags: [machine learning, coding, neural networks]
-author: Armando Maynez
-github:  amaynez/Perceptron/
+tags: [no, no and no]
+author: Richard Rosea
+github: richardrosea
 mathjax: yes
 ---
-As an entry point to learning python and getting into Machine Learning, I decided to code from scratch the Hello World! of the field, a single neuron perceptron.
+Lets see how this is working.
 
-## What is a perceptron?
+## Who is Richard Rosea?
 
-A perceptron is the basic building block of a neural network, it can be compared to a neuron, And its conception is what detonated the vast field of Artificial Intelligence nowadays.
+Rich is the oldest of 7 children.
 
-Back in the late 1950's, a young [Frank Rosenblatt](https://en.wikipedia.org/wiki/Frank_Rosenblatt) devised a very simple algorithm as a foundation to construct a machine that could learn to perform different tasks.
+Back in the late 1950's, a young Richard Rosea devised a very simple algorithm as a foundation to construct a machine that could learn to perform different tasks.
 
 In its essence, a perceptron is nothing more than a collection of values and rules for passing information through them, but in its simplicity lies its power.
 
@@ -71,19 +71,8 @@ The neuron has 3 inputs and weights to calculate its output:
 
 The Perceptron starts with weights all set to zero and learns by using 1,000 random points per each iteration.
 
-The output of the perceptron is calculated with the following activation function:
-    if x * weight_x + y weight_y + weight_bias is positive then 1 else 0
+he error for each point is calculated as the expected outcome of the perceptron minus the real outcome therefore there are only 3 possible error values:
 
-The error for each point is calculated as the expected outcome of the perceptron minus the real outcome therefore there are only 3 possible error values:
-
-|Expected  |  Calculated | Error|
-|:----:|:----:|:----:|
-|1|-1|1|
-|1|1|0|
-|-1|-1|0|
-|-1|1|-1|
-
-With every point that is learned if the error is not 0 the weights are adjusted according to:
 
     New_weight = Old_weight + error * input * learning_rate
     for example: New_weight_x = Old_weight_x + error * x * learning rate
